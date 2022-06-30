@@ -30,7 +30,7 @@ body{
 }
 .logo{
     font-family: 'Cinzel', serif;
-    font-size: 20px;
+    font-size: 25px;
     text-align: left;
     letter-spacing: 0.1em;
     justify-self: center;
@@ -127,6 +127,12 @@ nav li a:hover{
   width: 90%;
   margin: 0 auto;
 }
+.carousel-inner > .carousel-item > img {
+    object-fit: scale-down;
+    height: 50vh;
+    width: 100%;
+  }
+
 .trabajos {
     font-family: 'Quattrocento Sans', sans-serif;
     margin: 2%;
@@ -235,18 +241,33 @@ nav li a:hover{
 }
 /*PAGINA SERVICIOS*/
 .servicios-container{
-    margin: 0 auto;
-    width: 85%;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 50px;
-    justify-content: center;
+ 
     padding: 100px;
 }
-.servicios-container img{
-    width: 25%;
+.btn-primary{
+    background-color: pink;
+    border-color: pink;
 }
-
+.btn-primary:hover{
+    background-color: rgb(247, 134, 153);
+    border-color: rgb(247, 134, 153);
+}
+.btn-primary:active{
+    background-color: pink;
+    border-color: pink;
+}
+.btn-primary:disabled{
+    background-color: pink;
+    border-color: pink;
+}
+.btn:active{
+    background-color: pink;
+    border-color: pink;
+}  
+.btn:disabled{
+    background-color: pink;
+    border-color: pink;
+}  
 /*precio*/
 .precios-main{
     font-family: 'Quattrocento Sans', sans-serif;
