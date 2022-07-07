@@ -1,0 +1,61 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@import"./fonts";
+/*components*/
+@import"./component/header";
+@import "./component/main";
+@import "./component/sobremi";
+@import "./component/servicios";
+@import "./component/contacto";
+
+
+
+/*FOOTER*/
+footer{
+    font-family: $nav-footer-font;
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    height: 150px;
+    background-color:rgba(245, 245, 220, 0.767);
+    justify-content: space-evenly;
+}
+.nombre_final p{
+    text-align: center;
+    padding: 5px;
+}
+.resumen{
+    text-align: center;
+}
+.resumen ul{
+    width: 50%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-evenly;
+}
+.resumen p {
+    padding: 5px;
+}
+.redes{
+    text-align: center;
+}
+.redes ul {
+  display: flex;
+  width: 47%;
+  justify-content: space-evenly;
+  margin: 0 auto;
+  list-style: none;
+}
+
+.redes li a{
+    padding: 5px;
+    text-decoration: none;
+    color: black;
+}
+.redes li a:hover{
+    text-decoration: underline;
+}

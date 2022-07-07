@@ -1,0 +1,69 @@
+/*MAIN*/
+
+/*PAGINA INICIO*/
+.bebe_central {
+    background-image: url('../images/bebe.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    overflow: hidden;
+  }
+  .intro{
+      height: auto;
+      width: 100vw;
+  }
+  .frase p{
+      font-family: $body-font;
+      margin: 5%;
+      text-align: center;
+      font-size: 18px;
+      padding: 15px;
+  }
+  .carrusel img{
+      display: inline;
+      width: 33%;
+  }
+  .carrusel{
+    display: flex;
+    justify-content: center;
+    width: 90%;
+    margin: 0 auto;
+  }
+  .carousel-inner > .carousel-item > img {
+      object-fit: scale-down;
+      height: 50vh;
+      width: 100%;
+  }
+  .trabajos {
+      font-family: $body-font;
+      margin: 2%;
+      text-align: center;
+      font-size: 18px;
+      padding: 10px;
+  }
+  .trabajos p{
+      font-size: 25px;
+  }
+  .galeria-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .galeria-fotos{
+    margin: 0 auto;
+    max-width: 90%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1em;
+  }
+  .galeria-fotos img{
+    max-width: 100%;
+  }
+  @media screen and (max-width: 576px){
+      .galeria-fotos{
+          grid-template-columns: 1fr 1fr;
+      }
+  }
+  

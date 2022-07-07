@@ -1,0 +1,409 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Quattrocento+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@500&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/*components*/
+/*BODY*/
+body {
+  background-color: rgba(223, 240, 253, 0.3294117647);
+}
+
+/*HEADER*/
+/*nuevo navbar*/
+.navbar-expand-lg .navbar-nav .nav-link {
+  padding: 10px 20px;
+}
+
+.nav-effect {
+  padding: 20px 10px;
+}
+
+.navbar-nav a {
+  transition: 0.4s;
+  padding: 10px;
+  color: black;
+}
+
+.navbar-nav a:hover {
+  text-decoration: underline;
+  color: orangered;
+}
+
+.nav-link a {
+  padding: 30px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-evenly;
+  font-family: "Montserrat", sans-serif;
+}
+
+.navbar-expand-lg, .navbar-collapse {
+  justify-content: flex-end;
+}
+
+.navbar-brand {
+  font-family: "Cinzel", serif;
+  font-size: 20px;
+  transition: 0.3s;
+  padding: 0 16px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.navbar-brand:hover {
+  transform: scale(1.1);
+}
+
+.hover-underline-animation {
+  display: inline-block;
+  position: relative;
+  color: black;
+}
+
+.hover-underline-animation:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 1px;
+  bottom: 0;
+  left: 0;
+  background-color: gray;
+  transform-origin: bottom right;
+  transition: transform 0.5s ease-out;
+}
+
+.hover-underline-animation:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+/*logo*/
+.text-focus-in {
+  -webkit-animation: text-focus-in 0.5s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+  animation: text-focus-in 0.5s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+}
+
+/**
+ * ----------------------------------------
+ * animation text-focus-in
+ * ----------------------------------------
+ */
+@-webkit-keyframes text-focus-in {
+  0% {
+    -webkit-filter: blur(12px);
+    filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-filter: blur(0px);
+    filter: blur(0px);
+    opacity: 1;
+  }
+}
+@keyframes text-focus-in {
+  0% {
+    -webkit-filter: blur(12px);
+    filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-filter: blur(0px);
+    filter: blur(0px);
+    opacity: 1;
+  }
+}
+/*MAIN*/
+/*PAGINA INICIO*/
+.bebe_central {
+  background-image: url("../images/bebe.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.intro {
+  height: auto;
+  width: 100vw;
+}
+
+.frase p {
+  font-family: "Quattrocento Sans", sans-serif;
+  margin: 5%;
+  text-align: center;
+  font-size: 18px;
+  padding: 15px;
+}
+
+.carrusel img {
+  display: inline;
+  width: 33%;
+}
+
+.carrusel {
+  display: flex;
+  justify-content: center;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.carousel-inner > .carousel-item > img {
+  object-fit: scale-down;
+  height: 50vh;
+  width: 100%;
+}
+
+.trabajos {
+  font-family: "Quattrocento Sans", sans-serif;
+  margin: 2%;
+  text-align: center;
+  font-size: 18px;
+  padding: 10px;
+}
+
+.trabajos p {
+  font-size: 25px;
+}
+
+.galeria-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.galeria-fotos {
+  margin: 0 auto;
+  max-width: 90%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1em;
+}
+
+.galeria-fotos img {
+  max-width: 100%;
+}
+
+@media screen and (max-width: 576px) {
+  .galeria-fotos {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+/*sobre mi*/
+.sm-container {
+  padding: 100px 150px;
+  font-family: "Quattrocento Sans", sans-serif;
+}
+
+.imagen-fotografa {
+  padding: 50px;
+}
+
+.fade-in {
+  -webkit-animation: fade-in 1.2s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+  animation: fade-in 1.2s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+}
+
+@-webkit-keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@media screen and (max-width: 576px) {
+  .sm-container {
+    padding: 100px 50px;
+  }
+  .row {
+    display: block;
+  }
+  .parrafo-sm {
+    width: 100%;
+  }
+  .col-6 {
+    width: 100%;
+  }
+  .imagen-fotografa {
+    padding: 10px;
+  }
+}
+/*PAGINA SERVICIOS*/
+.servicios-container {
+  padding: 100px;
+}
+
+.btn-primary {
+  background-color: pink;
+  border-color: pink;
+}
+
+.btn-primary:hover {
+  background-color: rgb(247, 134, 153);
+  border-color: rgb(247, 134, 153);
+}
+
+.btn-primary:active {
+  background-color: pink;
+  border-color: pink;
+}
+
+.btn-primary:disabled {
+  background-color: pink;
+  border-color: pink;
+}
+
+.btn:active {
+  background-color: pink;
+  border-color: pink;
+}
+
+.btn:disabled {
+  background-color: pink;
+  border-color: pink;
+}
+
+/*precio*/
+.precios-main {
+  font-family: "Quattrocento Sans", sans-serif;
+  display: flex;
+  flex-direction: column;
+}
+
+.precios-img {
+  /*width: 33%;*/
+  background-image: url("../images/fondo-precio.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.precios-frase {
+  border: 1px solid rgba(128, 128, 128, 0.342);
+  margin: 10px;
+  background-color: rgb(253, 201, 201);
+  display: flex;
+  justify-content: center;
+}
+
+.precios-frase p {
+  font-family: "Quattrocento Sans", sans-serif;
+  margin: 5%;
+  text-align: center;
+  font-size: 18px;
+  padding: 15px;
+}
+
+.precios-container ul {
+  padding: 20px;
+}
+
+.precios-container li {
+  padding: 10px;
+  font-size: 18px;
+}
+
+.precios-container ul,
+.precios-container ul a {
+  text-decoration: none;
+  list-style: none;
+  color: black;
+}
+
+.precios-container a:hover {
+  text-decoration: underline;
+}
+
+.contacto {
+  padding: 10%;
+  max-width: 1170px;
+  font-family: "Quattrocento Sans", sans-serif;
+  font-size: 19px;
+  background-color: rgb(253, 201, 201);
+}
+
+.contacto h1 {
+  text-align: center;
+}
+
+.contacto-container {
+  box-shadow: 0 0 20px 0 rgba(255, 255, 255, 0.521);
+}
+
+.contacto-container > * {
+  padding: 1em;
+}
+
+/*FOOTER*/
+footer {
+  font-family: "Montserrat", sans-serif;
+  display: flex;
+  flex-direction: column;
+  width: auto;
+  height: 150px;
+  background-color: rgba(245, 245, 220, 0.767);
+  justify-content: space-evenly;
+}
+
+.nombre_final p {
+  text-align: center;
+  padding: 5px;
+}
+
+.resumen {
+  text-align: center;
+}
+
+.resumen ul {
+  width: 50%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.resumen p {
+  padding: 5px;
+}
+
+.redes {
+  text-align: center;
+}
+
+.redes ul {
+  display: flex;
+  width: 47%;
+  justify-content: space-evenly;
+  margin: 0 auto;
+  list-style: none;
+}
+
+.redes li a {
+  padding: 5px;
+  text-decoration: none;
+  color: black;
+}
+
+.redes li a:hover {
+  text-decoration: underline;
+}
+
+/*# sourceMappingURL=style.css.map */

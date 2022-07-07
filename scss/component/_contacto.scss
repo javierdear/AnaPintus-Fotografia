@@ -1,0 +1,16 @@
+.contacto{
+    padding: 10% ;
+    max-width: 1170px;
+    font-family: $body-font;
+    font-size: 19px;
+    background-color: rgb(253, 201, 201);
+}
+.contacto h1{
+    text-align: center;
+}
+.contacto-container{
+    box-shadow: 0 0 20px 0 rgba(255, 255, 255, 0.521);
+}
+.contacto-container > * {
+    padding: 1em;
+}
