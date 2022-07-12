@@ -1,13 +1,22 @@
+@import "../maps";
 /*MAIN*/
 
 /*PAGINA INICIO*/
-.bebe_central {
+/*.bebe_central {
     background-image: url('../images/bebe.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     height: 100vh;
     overflow: hidden;
+  }*/
+  .bebe_central{
+    background-image: url('../images/bebe.jpg');
+    background-size: cover;
+    background-repeat: map-get($map: $bg-images, $key:repeat);
+    background-position: map-get($map: $bg-images, $key:bg-position);
+    height: map-get($map: $bg-images, $key: height);
+    overflow: map-get($map: $bg-images, $key: overflow);
   }
   .intro{
       height: auto;

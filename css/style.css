@@ -122,10 +122,18 @@ body {
 }
 /*MAIN*/
 /*PAGINA INICIO*/
+/*.bebe_central {
+    background-image: url('../images/bebe.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    overflow: hidden;
+  }*/
 .bebe_central {
   background-image: url("../images/bebe.jpg");
-  background-repeat: no-repeat;
   background-size: cover;
+  background-repeat: no-repeat;
   background-position: center;
   height: 100vh;
   overflow: hidden;
@@ -281,6 +289,26 @@ body {
   border-color: pink;
 }
 
+.contacto {
+  padding: 10%;
+  max-width: 1170px;
+  font-family: "Quattrocento Sans", sans-serif;
+  font-size: 19px;
+  background-color: rgb(253, 201, 201);
+}
+
+.contacto h1 {
+  text-align: center;
+}
+
+.contacto-container {
+  box-shadow: 0 0 20px 0 rgba(255, 255, 255, 0.521);
+}
+
+.contacto-container > * {
+  padding: 1em;
+}
+
 /*precio*/
 .precios-main {
   font-family: "Quattrocento Sans", sans-serif;
@@ -288,8 +316,14 @@ body {
   flex-direction: column;
 }
 
+/*.precios-img{
+    background-image: url('../images/fondo-precio.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+    overflow: hidden;
+}*/
 .precios-img {
-  /*width: 33%;*/
   background-image: url("../images/fondo-precio.jpg");
   background-repeat: no-repeat;
   background-position: center;
@@ -331,26 +365,6 @@ body {
 
 .precios-container a:hover {
   text-decoration: underline;
-}
-
-.contacto {
-  padding: 10%;
-  max-width: 1170px;
-  font-family: "Quattrocento Sans", sans-serif;
-  font-size: 19px;
-  background-color: rgb(253, 201, 201);
-}
-
-.contacto h1 {
-  text-align: center;
-}
-
-.contacto-container {
-  box-shadow: 0 0 20px 0 rgba(255, 255, 255, 0.521);
-}
-
-.contacto-container > * {
-  padding: 1em;
 }
 
 /*FOOTER*/
