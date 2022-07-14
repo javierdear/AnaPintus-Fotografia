@@ -1,0 +1,21 @@
+@mixin textos ($margen, $centrado, $fuente, $padding){
+    margin: $margen;
+    text-align: $centrado;
+    font-size: $fuente;
+    padding: 15px;
+}
+.frase p{
+    @include textos(5%, center, 18px, 15px)
+}
+
+.trabajos p{
+    @include textos(10% auto 3%, center, 25px, 10px)
+}
+
+.parrafo-sm p{
+    @include textos(auto, auto, 17px, 5px)
+}
+
+.precios-frase p{
+    @include textos(5%, center, 18px, 15px)
+}

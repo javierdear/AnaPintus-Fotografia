@@ -4,6 +4,9 @@
     padding: 100px 150px;
     font-family: $body-font;
 }
+.parrafo-sm h1{
+  padding: 10px;
+}
 .imagen-fotografa{
     padding: 50px;
 }
@@ -28,7 +31,7 @@
     }
 }
   
-@media screen and (max-width: 576px){
+@media screen and (max-width: 991px){
     .sm-container{
         padding: 100px 50px;
     }

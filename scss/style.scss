@@ -12,7 +12,11 @@
 @import "./component/servicios";
 @import "./component/contacto";
 @import "./component/precios";
-@import "./maps";
+/*base*/
+@import "./base/extends";
+@import "./base/mixins";
+@import "./base/maps";
+
 
 
 /*FOOTER*/
@@ -22,7 +26,7 @@ footer{
     flex-direction: column;
     width: auto;
     height: 150px;
-    background-color:rgba(245, 245, 220, 0.767);
+   
     justify-content: space-evenly;
 }
 .nombre_final p{

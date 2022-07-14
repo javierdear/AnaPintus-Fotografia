@@ -9,10 +9,6 @@
 
 /*components*/
 /*BODY*/
-body {
-  background-color: rgba(223, 240, 253, 0.3294117647);
-}
-
 /*HEADER*/
 /*nuevo navbar*/
 .navbar-expand-lg .navbar-nav .nav-link {
@@ -133,23 +129,38 @@ body {
 .bebe_central {
   background-image: url("../images/bebe.jpg");
   background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  height: 100vh;
-  overflow: hidden;
 }
 
 .intro {
   height: auto;
-  width: 100vw;
+  width: 98.7vw;
 }
 
+.titulo {
+  padding: 100px;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-size: 2em;
+}
+
+.titulo span {
+  display: block;
+  transition: 0.4s;
+}
+
+.titulo span:hover {
+  color: orangered;
+}
+
+/*.frase p{
+    font-family: $body-font;
+    margin: 5%;
+    text-align: center;
+    font-size: 18px;
+    padding: 15px;
+}*/
 .frase p {
   font-family: "Quattrocento Sans", sans-serif;
-  margin: 5%;
-  text-align: center;
-  font-size: 18px;
-  padding: 15px;
 }
 
 .carrusel img {
@@ -170,16 +181,15 @@ body {
   width: 100%;
 }
 
-.trabajos {
-  font-family: "Quattrocento Sans", sans-serif;
-  margin: 2%;
-  text-align: center;
-  font-size: 18px;
-  padding: 10px;
-}
-
+/*.trabajos p{
+    font-family: $body-font;
+    margin: 10% auto 3%;
+    text-align: center;
+    padding: 10px;
+    font-size: 25px;
+}*/
 .trabajos p {
-  font-size: 25px;
+  font-family: "Quattrocento Sans", sans-serif;
 }
 
 .galeria-content {
@@ -212,6 +222,10 @@ body {
   font-family: "Quattrocento Sans", sans-serif;
 }
 
+.parrafo-sm h1 {
+  padding: 10px;
+}
+
 .imagen-fotografa {
   padding: 50px;
 }
@@ -237,7 +251,7 @@ body {
     opacity: 1;
   }
 }
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 991px) {
   .sm-container {
     padding: 100px 50px;
   }
@@ -291,6 +305,7 @@ body {
 
 .contacto {
   padding: 10%;
+  margin: 6%;
   max-width: 1170px;
   font-family: "Quattrocento Sans", sans-serif;
   font-size: 19px;
@@ -325,10 +340,6 @@ body {
 }*/
 .precios-img {
   background-image: url("../images/fondo-precio.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  height: 100vh;
-  overflow: hidden;
 }
 
 .precios-frase {
@@ -339,12 +350,15 @@ body {
   justify-content: center;
 }
 
+/*.precios-frase p{
+    font-family: $body-font;
+    margin: 5%;
+    text-align: center;
+    font-size: 18px;
+    padding: 15px;
+}*/
 .precios-frase p {
   font-family: "Quattrocento Sans", sans-serif;
-  margin: 5%;
-  text-align: center;
-  font-size: 18px;
-  padding: 15px;
 }
 
 .precios-container ul {
@@ -367,6 +381,54 @@ body {
   text-decoration: underline;
 }
 
+/*base*/
+.bebe_central, .precios-img {
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.frase p {
+  margin: 5%;
+  text-align: center;
+  font-size: 18px;
+  padding: 15px;
+}
+
+.trabajos p {
+  margin: 10% auto 3%;
+  text-align: center;
+  font-size: 25px;
+  padding: 15px;
+}
+
+.parrafo-sm p {
+  margin: auto;
+  text-align: auto;
+  font-size: 17px;
+  padding: 15px;
+}
+
+.precios-frase p {
+  margin: 5%;
+  text-align: center;
+  font-size: 18px;
+  padding: 15px;
+}
+
+body {
+  background-color: rgba(223, 240, 253, 0.3294117647);
+}
+
+.navbar-bg {
+  background-color: rgb(255, 241, 240);
+}
+
+footer {
+  background-color: rgb(255, 241, 240);
+}
+
 /*FOOTER*/
 footer {
   font-family: "Montserrat", sans-serif;
@@ -374,7 +436,6 @@ footer {
   flex-direction: column;
   width: auto;
   height: 150px;
-  background-color: rgba(245, 245, 220, 0.767);
   justify-content: space-evenly;
 }
 

@@ -13,10 +13,7 @@
 }*/
 .precios-img{
     background-image: url('../images/fondo-precio.jpg');
-    background-repeat: map-get($map: $bg-images, $key:repeat);
-    background-position: map-get($map: $bg-images, $key:bg-position);
-    height: map-get($map: $bg-images, $key: height);
-    overflow: map-get($map: $bg-images, $key: overflow);
+    @extend %bg-images;
 }
 
 .precios-frase{
@@ -26,12 +23,15 @@
     display: flex;
     justify-content: center;
 }
-.precios-frase p{
+/*.precios-frase p{
     font-family: $body-font;
     margin: 5%;
     text-align: center;
     font-size: 18px;
     padding: 15px;
+}*/
+.precios-frase p{
+    font-family: $body-font;
 }
 .precios-container ul{
     padding: 20px;

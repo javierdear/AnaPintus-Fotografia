@@ -1,4 +1,3 @@
-@import "../maps";
 /*MAIN*/
 
 /*PAGINA INICIO*/
@@ -13,21 +12,34 @@
   .bebe_central{
     background-image: url('../images/bebe.jpg');
     background-size: cover;
-    background-repeat: map-get($map: $bg-images, $key:repeat);
-    background-position: map-get($map: $bg-images, $key:bg-position);
-    height: map-get($map: $bg-images, $key: height);
-    overflow: map-get($map: $bg-images, $key: overflow);
+    @extend %bg-images;
   }
   .intro{
       height: auto;
-      width: 100vw;
+      width: 98.7vw;
   }
-  .frase p{
+  .titulo{
+    padding: 100px;
+    text-align: center;
+    font-family: $nav-footer-font;
+    font-size: 2em;
+  }
+  .titulo span{
+    display: block;
+    transition: 0.4s;
+  }
+  .titulo span:hover{
+      color: orangered
+  }
+  /*.frase p{
       font-family: $body-font;
       margin: 5%;
       text-align: center;
       font-size: 18px;
       padding: 15px;
+  }*/
+  .frase p{
+    font-family: $body-font;
   }
   .carrusel img{
       display: inline;
@@ -44,16 +56,17 @@
       height: 50vh;
       width: 100%;
   }
-  .trabajos {
+  /*.trabajos p{
       font-family: $body-font;
-      margin: 2%;
+      margin: 10% auto 3%;
       text-align: center;
-      font-size: 18px;
       padding: 10px;
-  }
-  .trabajos p{
       font-size: 25px;
+  }*/
+  .trabajos p{
+    font-family: $body-font;
   }
+  
   .galeria-content {
     display: flex;
     flex-direction: row;
