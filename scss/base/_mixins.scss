@@ -4,8 +4,9 @@
     font-size: $fuente;
     padding: 15px;
 }
+
 .frase p{
-    @include textos(5%, center, 18px, 15px)
+    @include textos(5%, center, 25px, 15px)
 }
 
 .trabajos p{
@@ -18,4 +19,7 @@
 
 .precios-frase p{
     @include textos(5%, center, 18px, 15px)
+}
+.img-txt{
+    @include textos(0, center, 30px, 15px)
 }

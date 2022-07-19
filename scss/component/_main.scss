@@ -19,10 +19,10 @@
       width: 98.7vw;
   }
   .titulo{
-    padding: 100px;
+    padding: 1em;
     text-align: center;
     font-family: $nav-footer-font;
-    font-size: 2em;
+    font-size: 2.5em;
   }
   .titulo span{
     display: block;
@@ -38,9 +38,11 @@
       font-size: 18px;
       padding: 15px;
   }*/
+  
   .frase p{
     font-family: $body-font;
   }
+  
   .carrusel img{
       display: inline;
       width: 33%;
@@ -82,6 +84,13 @@
   }
   .galeria-fotos img{
     max-width: 100%;
+
+    opacity: 1;
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+  }
+  .galeria-fotos img:hover{
+    opacity: .5;
   }
   @media screen and (max-width: 576px){
       .galeria-fotos{

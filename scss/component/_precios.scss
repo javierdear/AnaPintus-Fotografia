@@ -12,16 +12,21 @@
     overflow: hidden;
 }*/
 .precios-img{
-    background-image: url('../images/fondo-precio.jpg');
+    background-image: url('../images/family2.jpg');
     @extend %bg-images;
 }
 
 .precios-frase{
-    border: 1px solid rgba(128, 128, 128, 0.342);
-    margin: 10px;
-    background-color: rgb(253, 201, 201);
+    margin: 3.5em;
     display: flex;
     justify-content: center;
+}
+
+.precios-frase span{
+    transition: 0.4s;
+}
+.precios-frase span:hover{
+    color: orangered;
 }
 /*.precios-frase p{
     font-family: $body-font;
@@ -48,4 +53,7 @@
 }
 .precios-container a:hover{
     text-decoration: underline;
+}
+.precios-container h2{
+    padding: 0 30px;
 }

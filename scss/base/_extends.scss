@@ -1,6 +1,11 @@
 %bg-images {
    background-repeat: no-repeat;
    background-position: center;
-   height: 100vh;
+   height: 70vh;
    overflow: hidden; 
+}
+@media screen and (max-width: 420px){
+   .bebe_central{
+     height: 44vh;
+   }
 }
