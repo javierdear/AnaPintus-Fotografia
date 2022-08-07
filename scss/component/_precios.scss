@@ -4,13 +4,6 @@
     display: flex;
     flex-direction: column;
 }
-/*.precios-img{
-    background-image: url('../images/fondo-precio.jpg');
-    background-repeat: no-repeat;
-    background-position: center;
-    height: 100vh;
-    overflow: hidden;
-}*/
 .precios-img{
     background-image: url('../images/family2.jpg');
     @extend %bg-images;
@@ -28,32 +21,22 @@
 .precios-frase span:hover{
     color: orangered;
 }
-/*.precios-frase p{
-    font-family: $body-font;
-    margin: 5%;
-    text-align: center;
-    font-size: 18px;
-    padding: 15px;
-}*/
-.precios-frase p{
-    font-family: $body-font;
-}
-.precios-container ul{
+.col-6{
     padding: 20px;
 }
-.precios-container li{
-    padding: 10px;
-    font-size: 18px;
+.precios-container{
+    padding: 2em 10em;
+    font-family: $body-font;
 }
-.precios-container ul,
-.precios-container ul a{
+.col-6 a{
     text-decoration: none;
-    list-style: none;
-    color: black;
+    color: orangered;
 }
-.precios-container a:hover{
-    text-decoration: underline;
+.negrita{
+    font-weight: bold;
 }
-.precios-container h2{
-    padding: 0 30px;
+@media  (max-width: 991px){
+    .precios-container {
+        padding: 1em 5em;
+    }
 }

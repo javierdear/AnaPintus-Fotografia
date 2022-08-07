@@ -12,3 +12,6 @@ body{
 footer{
     background-color: map-get($map: $bg-colors, $key: bg-footer)
 }
+.footer{
+    background-color: map-get($map: $bg-colors, $key: bg-footer)
+}

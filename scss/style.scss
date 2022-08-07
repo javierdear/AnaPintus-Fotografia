@@ -27,7 +27,10 @@ footer{
     width: auto;
     height: 150px;
     justify-content: space-evenly;
-    margin-top: 5em;
+    margin: 5em;
+}
+.footer{
+    width: 100%;
 }
 .nombre_final p{
     text-align: center;
@@ -36,7 +39,7 @@ footer{
 .resumen{
     text-align: center;
 }
-.resumen ul{
+.resumen{
     width: 50%;
     margin: 0 auto;
     display: flex;
@@ -63,4 +66,20 @@ footer{
 }
 .redes li a:hover{
     text-decoration: underline;
+}
+@media (max-width: 450px){
+    .footer{
+        margin-top: 200px;
+    }
+    
+    .resumen{
+        display: inline-block;
+    }
+    .nombre_final{
+        margin-top: 100px;
+    }
+    .redes{
+        padding: 30px;
+    }
+    
 }
