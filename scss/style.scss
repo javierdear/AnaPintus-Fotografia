@@ -31,7 +31,11 @@ footer{
 }
 .footer{
     width: 100%;
+    display: grid;
+    justify-content: center;
+    text-align: center;
 }
+/*
 .nombre_final p{
     text-align: center;
     padding: 5px;
@@ -47,6 +51,17 @@ footer{
 }
 .resumen p {
     padding: 5px;
+}
+*/
+/* para queries:  .resumen{
+    display: inline-block;
+}*/
+.resumen{
+    display: flex;
+    padding: 10px;
+}
+.resumen p{
+    padding: 15px;
 }
 .redes{
     text-align: center;

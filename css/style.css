@@ -511,26 +511,39 @@ footer {
 
 .footer {
   width: 100%;
-}
-
-.nombre_final p {
-  text-align: center;
-  padding: 5px;
-}
-
-.resumen {
+  display: grid;
+  justify-content: center;
   text-align: center;
 }
 
+/*
+.nombre_final p{
+    text-align: center;
+    padding: 5px;
+}
+.resumen{
+    text-align: center;
+}
+.resumen{
+    width: 50%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-evenly;
+}
+.resumen p {
+    padding: 5px;
+}
+*/
+/* para queries:  .resumen{
+    display: inline-block;
+}*/
 .resumen {
-  width: 50%;
-  margin: 0 auto;
   display: flex;
-  justify-content: space-evenly;
+  padding: 10px;
 }
 
 .resumen p {
-  padding: 5px;
+  padding: 15px;
 }
 
 .redes {
