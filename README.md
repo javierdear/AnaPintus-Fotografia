@@ -1,4 +1,4 @@
-# proyectoCoder
+# Sass
 Maps: lo utilicé para el background –color en el body, navbar y footer
 Extend:  creé un extend para reutilizar variables involucradas en las background-image
 Mixins: el mixin lo usé para usar variables vinculadas a los textos, y le di los valores que fui necesitando.
